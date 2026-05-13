@@ -9,47 +9,54 @@
 body{
   margin:0;
   font-family: Arial;
-  background:#f7f4ed; /* نفس روح Lovable */
-  color:#1c1c1c;
+  background:#f7f4ed;
+  color:#1a1a1a;
 }
 
 .header{
   text-align:center;
-  padding:30px 15px;
-  font-size:28px;
-  font-weight:bold;
+  padding:40px 20px 10px;
 }
 
-.card{
-  width:90%;
+.header h1{
+  margin:0;
+  font-size:32px;
+}
+
+.header p{
+  color:#666;
+  margin-top:8px;
+}
+
+.menu{
   max-width:500px;
   margin:20px auto;
-  background:#f7f4ed;
-  border:1px solid #eceae4;
-  border-radius:16px;
-  padding:15px;
+  padding:0 15px;
+}
+
+.section{
+  margin-bottom:25px;
+  border:1px solid #e9e4db;
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+}
+
+.section-title{
+  background:#f2eee6;
+  padding:12px;
+  font-weight:bold;
 }
 
 .item{
   display:flex;
   justify-content:space-between;
-  padding:12px 10px;
-  border-bottom:1px solid #eceae4;
-}
-
-.item:last-child{
-  border-bottom:none;
+  padding:14px;
+  border-top:1px solid #eee;
 }
 
 .price{
   font-weight:bold;
-}
-
-.sub{
-  text-align:center;
-  color:#5f5f5d;
-  font-size:14px;
-  margin-top:-10px;
 }
 </style>
 
@@ -57,23 +64,29 @@ body{
 
 <body>
 
-<div class="header">منيو المطعم</div>
-<div class="sub">نكهة بسيطة بتجربة راقية</div>
+<div class="header">
+  <h1>منيو المطعم</h1>
+  <p>تجربة بسيطة بروح راقية</p>
+</div>
 
-<div class="card">
+<div class="menu">
 
-  <div class="item">
-    <span>برجر لحم</span>
-    <span class="price">120 جنيه</span>
-  </div>
+  <div class="section">
+    <div class="section-title">الأطباق الرئيسية</div>
 
-  <div class="item">
-    <span>بيتزا إيطالية</span>
-    <span class="price">150 جنيه</span>
+    <div class="item">
+      <span>برجر لحم</span>
+      <span class="price">120 جنيه</span>
+    </div>
+
+    <div class="item">
+      <span>بيتزا إيطالية</span>
+      <span class="price">150 جنيه</span>
+    </div>
+
   </div>
 
 </div>
 
 </body>
 </html>
-
