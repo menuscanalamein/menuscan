@@ -1,64 +1,76 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع القائمة</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منيو المطعم</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+body{
+  margin:0;
+  font-family: Arial;
+  background:#f7f4ed; /* نفس روح Lovable */
+  color:#1c1c1c;
+}
 
-        header {
-            background: #111;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-        }
+.header{
+  text-align:center;
+  padding:30px 15px;
+  font-size:28px;
+  font-weight:bold;
+}
 
-        .container {
-            padding: 20px;
-        }
+.card{
+  width:90%;
+  max-width:500px;
+  margin:20px auto;
+  background:#f7f4ed;
+  border:1px solid #eceae4;
+  border-radius:16px;
+  padding:15px;
+}
 
-        .card {
-            background: white;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+.item{
+  display:flex;
+  justify-content:space-between;
+  padding:12px 10px;
+  border-bottom:1px solid #eceae4;
+}
 
-        .price {
-            color: green;
-            font-weight: bold;
-        }
-    </style>
+.item:last-child{
+  border-bottom:none;
+}
+
+.price{
+  font-weight:bold;
+}
+
+.sub{
+  text-align:center;
+  color:#5f5f5d;
+  font-size:14px;
+  margin-top:-10px;
+}
+</style>
+
 </head>
 
 <body>
 
-<header>
-    منيو المطعم
-</header>
+<div class="header">منيو المطعم</div>
+<div class="sub">نكهة بسيطة بتجربة راقية</div>
 
-<div class="container">
+<div class="card">
 
-    <div class="card">
-        <h3>برجر لحم</h3>
-        <p>وجبة برجر لذيذة مع بطاطس</p>
-        <p class="price">120 جنيه</p>
-    </div>
+  <div class="item">
+    <span>برجر لحم</span>
+    <span class="price">120 جنيه</span>
+  </div>
 
-    <div class="card">
-        <h3>بيتزا</h3>
-        <p>بيتزا إيطالية حجم وسط</p>
-        <p class="price">150 جنيه</p>
-    </div>
+  <div class="item">
+    <span>بيتزا إيطالية</span>
+    <span class="price">150 جنيه</span>
+  </div>
 
 </div>
 
